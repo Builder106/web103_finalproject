@@ -1,49 +1,53 @@
-# [your app name here]
+# Study Sprint Tracker
 
 CodePath WEB103 Final Project
 
-Designed and developed by: [your names here]
+Designed and developed by: Olayinka Vaughan, Osmani Hernandez and Adit Syed Afnan
 
-🔗 Link to deployed app:
+🔗 Link to deployed app: 
 
 ## About
 
 ### Description and Purpose
 
-[text goes here]
+Study Sprint Tracker is a web app for students to plan, track, and visualize focused study sessions by goal. Users can create study goals, log timed sessions, and review progress in a dashboard without losing context.
 
 ### Inspiration
 
-[text goes here]
+I wanted a simple app that supports deliberate practice and productivity in student life. The concept is inspired by Pomodoro habits and task-focused learning; it should help learners measure progress and feel momentum.
 
 ## Tech Stack
 
-Frontend:
+Frontend: React
 
-Backend:
+Backend: Express, PostgreSQL
 
 ## Features
 
-### [Name of Feature 1]
+### Baseline Features
 
-[short description goes here]
+- Full-stack app: Express backend + React frontend
+- PostgreSQL schema with one-to-many and many-to-many
+- API RESTful CRUD for Study Goals
+- Reset DB endpoint
+- React Router dynamic routes (home, goal detail, session log)
+- Same-page interaction: start/stop timer + add log without navigation
+- Frontend redirect (e.g., login redirects to dashboard)
+- Component hierarchy: pages/components and container/presenter design
+- Deployed on Render with all visible features working
 
-[gif goes here]
+### Custom Features
 
-### [Name of Feature 2]
+- Auto-generate starter data when a new user creates an account (starter goals + subject tags)
+- Modal for adding/editing study sessions (covers current page content), plus a slide-out details panel
 
-[short description goes here]
+### Stretch Features (Optional)
 
-[gif goes here]
-
-### [Name of Feature 3]
-
-[short description goes here]
-
-[gif goes here]
-
-### [ADDITIONAL FEATURES GO HERE - ADD ALL FEATURES HERE IN THE FORMAT ABOVE; you will check these off and add gifs as you complete them]
+- Validation: session duration must be > 0 and goal target hours must be positive before DB update
+- Filter/sort goals by status, time logged, or subject
 
 ## Installation Instructions
 
-[instructions go here]
+1. Clone repo
+2. Install client and server dependencies
+3. Set up the PostgreSQL database

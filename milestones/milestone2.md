@@ -14,6 +14,13 @@ This unit, be sure to complete all tasks listed below. To complete a task, place
   - [x] You do **not** need to submit any materials in advance of your pitch.
 - [x] In this document, complete all three questions in the **Reflection** section below
 
+## Wireframe Links
+
+- Main wireframe document: [`planning/wireframes.md`](../planning/wireframes.md)
+- Landing/login image: [`planning/assets/landing-login.png`](../planning/assets/landing-login.png)
+- Dashboard image: [`planning/assets/dashboard-goals.png`](../planning/assets/dashboard-goals.png)
+- Goal detail image: [`planning/assets/goal-detail.png`](../planning/assets/goal-detail.png)
+
 ## Reflection
 
 ### 1. What went well during this unit?

@@ -1,7 +1,5 @@
 # Entity Relationship Diagram
 
-Reference the Creating an Entity Relationship Diagram final project guide in the course portal for more information about how to complete this deliverable.
-
 ## Create the List of Tables
 
 | Table | Purpose |
@@ -20,7 +18,6 @@ Relationships: **users → study_goals** (one-to-many), **study_goals → study_
 erDiagram
     users ||--o{ study_goals : owns
     study_goals ||--o{ study_sessions : contains
-    study_goals }o--o{ subjects : tagged_via
     goal_subjects }|--|| study_goals : for_goal
     goal_subjects }|--|| subjects : uses_tag
 

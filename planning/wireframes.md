@@ -17,87 +17,31 @@ Reference the Creating an Entity Relationship Diagram final project guide in the
 
 ## Wireframe 1: Landing / login ⭐
 
-```
-+----------------------------------------------------------+
-|  Study Sprint Tracker          [ About ]    [ Log in ]   |
-+----------------------------------------------------------+
-|                                                          |
-|     [  Logo / illustration area  ]                       |
-|                                                          |
-|              Plan. Track. Focus.                         |
-|         Short value line for students.                   |
-|                                                          |
-|     +------------------+    +------------------+           |
-|     | Email            |    | Password         |         |
-|     +------------------+    +------------------+           |
-|                                                          |
-|              [        Sign in        ]                   |
-|              [   Create account (link) ]                 |
-|                                                          |
-|     (After sign-in → redirect to Dashboard)            |
-+----------------------------------------------------------+
-```
+Focus: guest entry, authentication fields, and redirect to dashboard after sign-in.
+
+Reference image: [`assets/landing-login.png`](./assets/landing-login.png)
+
+![Landing and login wireframe](./assets/landing-login.png)
 
 ---
 
 ## Wireframe 2: Dashboard (goals list) ⭐
 
-```
-+----------------------------------------------------------+
-|  Study Sprint Tracker    [ Filter: Active ▼ ]   [ + Goal ] |
-+----------------------------------------------------------+
-|  Your goals                                    Total: 12h|
-+----------------------------------------------------------+
-|  +----------------------------------------------------+  |
-|  | CS midterm prep          [=====>    ] 62%   Active  |  |
-|  | Target 20h · Logged 12.4h              [ Open ]    |  |
-|  +----------------------------------------------------+  |
-|  +----------------------------------------------------+  |
-|  | Biology chapter 3      [==>        ] 35%   Active  |  |
-|  | Target 10h · Logged 3.5h               [ Open ]    |  |
-|  +----------------------------------------------------+  |
-|  +----------------------------------------------------+  |
-|  | History essay outline  [==========] 100%  Done     |  |
-|  | Target 8h · Logged 8h                  [ Open ]    |  |
-|  +----------------------------------------------------+  |
-|                                                          |
-|  (Click row or Open → Goal detail)                       |
-+----------------------------------------------------------+
-```
+Focus: active goal list, progress visibility, filter controls, and add-goal entry point.
+
+Reference image: [`assets/dashboard-goals.png`](./assets/dashboard-goals.png)
+
+![Dashboard goals list wireframe](./assets/dashboard-goals.png)
 
 ---
 
 ## Wireframe 3: Goal detail (timer + sessions + modal) ⭐
 
-```
-+----------------------------------------------------------+
-|  < Back    CS midterm prep                    [ ⋮ menu ] |
-+----------------------------------------------------------+
-|  Progress [=========>        ] 62%    Status: Active    |
-|  Target 20h · Logged 12.4h · Remaining 7.6h              |
-+----------------------------------------------------------+
-|  Timer                                                   |
-|  +----------------------------------------------------+  |
-|  |            00 : 25 : 14                             |  |
-|  |         [  Start ]   [  Pause  ]                   |  |
-|  |         [ Log session (opens modal) ]              |  |
-|  +----------------------------------------------------+  |
-+----------------------------------------------------------+
-|  Recent sessions                         [ + Add session ] |
-|  +----------------------------------------------------+  |
-|  | Apr 7  ·  45 min  ·  "Practice problems"   [edit]  |  |
-|  | Apr 6  ·  30 min  ·  "Reading"             [edit]  |  |
-|  +----------------------------------------------------+  |
-|                                                          |
-|  -------- Modal (covers page when open) --------         |
-|  +----------------------------------------------------+  |
-|  | Log session                                   [ X ] |  |
-|  | Duration (min): [  45  ]                              |  |
-|  | Notes: [________________________________]           |  |
-|  |           [ Cancel ]  [ Save session ]               |  |
-|  +----------------------------------------------------+  |
-+----------------------------------------------------------+
-```
+Focus: per-goal progress, timer actions, recent sessions, and same-page modal logging flow.
+
+Reference image: [`assets/goal-detail.png`](./assets/goal-detail.png)
+
+![Goal detail wireframe](./assets/goal-detail.png)
 
 The session log uses a **modal** over the goal page so the user does not navigate away (baseline: same-page interaction).
 
@@ -105,15 +49,6 @@ The session log uses a **modal** over the goal page so the user does not navigat
 
 ## Wireframe 4 (optional): Slide-out details panel
 
-```
-Goal detail with narrow right panel for metadata (subjects/tags, created date):
-
-+----------------------------------------+---------------+
-|  (same header + timer + session list)  | Details     |
-|                                        | Subjects: CS |
-|                                        | Created: ... |
-|                                        | [ Close ]    |
-+----------------------------------------+---------------+
-```
+Concept: goal detail page with a narrow right-side metadata panel (subjects/tags, created date).
 
 Custom feature from README: slide-out details panel complements the modal pattern.

@@ -20,3 +20,11 @@ Reference the Writing User Stories final project guide in the course portal for 
 9. As a learner, I can see total logged hours and remaining target hours.
 10. As a learner, I can use a modal to create a session quickly.
 11. As a guest, I can return to the landing page when not logged in.
+
+## Related Planning Assets
+
+- Wireframe doc: [`wireframes.md`](./wireframes.md)
+- Landing/login wireframe image: [`assets/landing-login.png`](./assets/landing-login.png)
+- Dashboard wireframe image: [`assets/dashboard-goals.png`](./assets/dashboard-goals.png)
+- Goal detail wireframe image: [`assets/goal-detail.png`](./assets/goal-detail.png)
+- ERD doc: [`entity_relationship_diagram.md`](./entity_relationship_diagram.md)

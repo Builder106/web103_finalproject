@@ -46,9 +46,3 @@ Reference image: [`assets/goal-detail.png`](./assets/goal-detail.png)
 The session log uses a **modal** over the goal page so the user does not navigate away (baseline: same-page interaction).
 
 ---
-
-## Wireframe 4 (optional): Slide-out details panel
-
-Concept: goal detail page with a narrow right-side metadata panel (subjects/tags, created date).
-
-Custom feature from README: slide-out details panel complements the modal pattern.

@@ -1,0 +1,31 @@
+{
+  "name": "study-sprint-tracker",
+  "version": "1.0.0",
+  "description": "CodePath WEB103 Final Project - Study Sprint Tracker",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\"",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "init-db": "node ./server/config/initDb.js",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Builder106/web103_finalproject.git"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "postgresql",
+    "fullstack",
+    "productivity",
+    "study-tracker"
+  ],
+  "author": "Olayinka Vaughan, Osmani Hernandez, Adit Syed Afnan",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

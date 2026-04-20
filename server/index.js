@@ -13,7 +13,7 @@ const JWT_SECRET = 'your-super-secret-key'; // Use an environment variable in pr
 
 app.use(cors());
 app.use(express.json());
-
+app.use("/api/auth", require("./routes/auth"));
 app.post('/auth/signup', (req, res) => {
   const { email, password } = req.body;
   if (!email || !password) {

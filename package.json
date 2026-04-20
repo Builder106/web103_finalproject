@@ -4,28 +4,44 @@
   "description": "CodePath WEB103 Final Project - Study Sprint Tracker",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\"",
-    "client": "cd client && npm run dev",
-    "server": "cd server && npm run dev",
-    "build": "cd client && npm run build",
-    "init-db": "node ./server/config/initDb.js",
-    "start": "npm run dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Builder106/web103_finalproject.git"
+    "dev": "concurrently \"vite\" \"nodemon server/index.js\"",
+    "client": "vite",
+    "server": "nodemon server/index.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "init-db": "node ./server/config/initDb.js"
   },
   "keywords": [
     "react",
     "express",
     "postgresql",
     "fullstack",
-    "productivity",
-    "study-tracker"
+    "productivity"
   ],
   "author": "Olayinka Vaughan, Osmani Hernandez, Adit Syed Afnan",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^3.1.14",
+    "vite": "^8.0.4",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
+    "@eslint/js": "^9.39.4",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.0.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
   }
 }

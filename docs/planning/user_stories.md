@@ -20,6 +20,7 @@ Reference the Writing User Stories final project guide in the course portal for 
 9. As a learner, I can see total logged hours and remaining target hours.
 10. As a learner, I can use a modal to create a session quickly.
 11. As a guest, I can return to the landing page when not logged in.
+12. As a learner, I can connect my Google Calendar to automatically sync my completed study sessions.
 
 ## Related Planning Assets
 

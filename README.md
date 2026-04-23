@@ -4,7 +4,7 @@ CodePath WEB103 Final Project
 
 Designed and developed by: Olayinka Vaughan, Osmani Hernandez and Adit Syed Afnan
 
-🔗 Link to deployed app:
+🔗 Link to deployed app: https://studysprint-frontend.onrender.com/
 
 ## About
 

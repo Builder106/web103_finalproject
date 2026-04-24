@@ -9,9 +9,9 @@ This unit, be sure to complete all tasks listed below. To complete a task, place
 - [x] Deploy your project on Render
   - [x] In `readme.md`, add the link to your deployed project
 - [ ] Update the status of issues in your project board as you complete them
-- [ ] In `readme.md`, check off the features you have completed in this unit by adding a ✅ emoji in front of their title
+- [x] In `readme.md`, check off the features you have completed in this unit by adding a ✅ emoji in front of their title
   - [ ] Under each feature you have completed, **include a GIF** showing feature functionality
-- [ ] In this document, complete the **Reflection** section below
+- [x] In this document, complete the **Reflection** section below
 - [ ] 🚩🚩🚩**Complete the Final Project Feature Checklist section below**, detailing each feature you completed in the project (ONLY include features you implemented, not features you planned)
 - [ ] 🚩🚩🚩**Record a GIF showing a complete run-through of your app** that displays all the components included in the **Final Project Feature Checklist** below
   - [ ] Include this GIF in the **Final Demo GIF** section below
@@ -86,20 +86,20 @@ Complete the checklist below detailing each baseline, custom, and stretch featur
 
 ### 1. What went well during this unit?
 
-[👉🏾👉🏾👉🏾 your answer here]
+We shipped every feature on our issue list — eleven GitHub issues closed this unit, spanning bug fixes (inline validation on goal hours and session duration), UI polish (filter/sort on the dashboard, slide-out details panel, context menus on goal and session rows), and substantial new features (Pomodoro timer with spaced-repetition quality ratings, ambient noise generated in-browser via the Web Audio API plus a live markdown notes pad, an analytics dashboard with a hand-rolled 52-week contribution heatmap, AI syllabus parsing via OpenRouter's free meta-model, Google Calendar OAuth with per-session export, gamification with streaks/XP/level/achievements and a virtual plant grown through six SVG stages, and social features with public profiles, a weekly leaderboard, and study rooms with a 48-hour activity feed). Closing issues via `Closes #N` trailers kept the GitHub project board accurate without extra ceremony, and the per-feature commits made it easy to review what shipped when.
 
 ### 2. What were some challenges your group faced in this unit?
 
-[👉🏾👉🏾👉🏾 your answer here]
+Real-world integration issues that only appear on the deploy. OpenRouter's free-tier Llama model hit upstream rate limits mid-demo, which we worked around by switching to their `openrouter/free` meta-model that pools across providers. `pdf-parse@2` shipped a class-based API that doesn't match v1 tutorials, so the syllabus-upload route had to be rewritten after the first install. Render's static-site SPA fallback wasn't configured — `/dashboard` and every other client-routed path returned 404 on direct visits — until we added a `_redirects` file inside the build output. Google OAuth setup had its own layer of gotchas (redirect-URI byte-for-byte matching, Test users list while the app sits in Testing status, refresh tokens only returned with `access_type=offline` + `prompt=consent`). Scoping the social features was hard too — we built profiles, leaderboard, and rooms, but had to accept polling instead of websockets to keep the feature shippable in a week.
 
 ### 3. What were some of the highlights or achievements that you are most proud of in this project?
 
-[👉🏾👉🏾👉🏾 your answer here]
+The analytics heatmap, which we built with raw SVG rather than pulling in a calendar-heatmap library, and the virtual plant in the garden page that actually grows through six visibly different stages as you log more hours. The Pomodoro timer that auto-opens the session-log modal when a focus phase ends — little flow detail but it makes the feature feel finished. The syllabus parser, which genuinely works: paste a course outline and you get back a list of editable study goals with realistic hours and deadlines in seconds. And keeping the whole app visually coherent — the same zinc/lime palette, the same uppercase-tracking labels, the same slide-out pattern — across features that span from AI to calendar sync to a leaderboard.
 
 ### 4. Reflecting on your web development journey so far, how have you grown since the beginning of the course?
 
-[👉🏾👉🏾👉🏾 your answer here]
+At the start of the course we were writing React components without really understanding state co-location, and Express routes without transactional boundaries. By the end of this project we were reaching for `pool.connect()` + `BEGIN`/`COMMIT`/`ROLLBACK` when a request touched more than one table, refactoring repeated UI into shared primitives (`TimerCard`, `FocusTools`, `Spinner`, `ContextMenuPrimitives`), and debugging production-only issues like cached 404s from a stale CDN edge. The biggest shift was understanding that shipping is iterative: the first pass is almost never the last, and the real learning happens when real constraints — rate limits, OAuth mismatches, cache invalidation, API-version surprises — push back.
 
 ### 5. Looking ahead, what are your goals related to web development, and what steps do you plan to take to achieve them?
 
-[👉🏾👉🏾👉🏾 your answer here]
+Short term: continue improving StudySprint — add per-room presence via Server-Sent Events, wire Pomodoro completion stats into the analytics page, and tighten the mobile layout. Medium term: keep building full-stack projects that actually deploy, because the gap between a working demo and a deployable app is where most of the growth happens — planning to explore server components in Next.js and push deeper into PostgreSQL query optimization and indexing strategies. Long term: contribute to an open-source project to learn from reviews I didn't write myself, and eventually take on backend work that involves real concurrency and migration strategy, not just CRUD.

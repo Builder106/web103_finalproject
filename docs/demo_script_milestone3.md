@@ -1,7 +1,7 @@
 # Demo Script — Milestone 3 (Unit 7)
 
-**Project:** Study Sprint Tracker  
-**Repo:** https://github.com/Builder106/web103_finalproject  
+**Project:** Study Sprint Tracker
+**Repo:** https://github.com/Builder106/web103_finalproject
 **Demo account:** demo@example.com / demo123
 
 ---
@@ -128,13 +128,13 @@
 
 **What to show:** All dynamic routes work and navigation is smooth.
 
-| Route | Component |
-|---|---|
-| `/` | Landing (login) |
-| `/register` | Register |
-| `/dashboard` | Dashboard |
-| `/goals/new` | NewGoal form |
-| `/goal/:id` | GoalDetail (timer + sessions) |
+| Route                 | Component                       |
+| --------------------- | ------------------------------- |
+| `/`                 | Landing (login)                 |
+| `/register`         | Register                        |
+| `/dashboard`        | Dashboard                       |
+| `/goals/new`        | NewGoal form                    |
+| `/goal/:id`         | GoalDetail (timer + sessions)   |
 | `/goal/:id/details` | GoalDetailWithPanel (slide-out) |
 
 Navigate through each route and show the URL updating in the browser bar. Attempting to open `/dashboard` while logged out should redirect to `/`.
@@ -169,16 +169,16 @@ Open `StudySprint/frontend/app/components/shared/` and point out:
 
 All 11 issues in **Milestone 3 - Unit 7** are closed:
 
-| # | Feature |
-|---|---|
-| #1 | Study goals CRUD workflow |
-| #2 | Dashboard with progress bars |
-| #3 | Goal detail view with recent sessions |
-| #4 | Timer controls and session save flow |
-| #5 | Reset database endpoint |
-| #6 | React Router dynamic routes |
-| #7 | Auth flow with redirect |
-| #8 | Reusable component structure |
-| #9 | Deploy to Render |
-| #10 | Starter goal and tag generation |
-| #11 | Session add/edit modal |
+| #   | Feature                               |
+| --- | ------------------------------------- |
+| #1  | Study goals CRUD workflow             |
+| #2  | Dashboard with progress bars          |
+| #3  | Goal detail view with recent sessions |
+| #4  | Timer controls and session save flow  |
+| #5  | Reset database endpoint               |
+| #6  | React Router dynamic routes           |
+| #7  | Auth flow with redirect               |
+| #8  | Reusable component structure          |
+| #9  | Deploy to Render                      |
+| #10 | Starter goal and tag generation       |
+| #11 | Session add/edit modal                |

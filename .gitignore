@@ -3,3 +3,6 @@ dist
 ISSUE_PLAN.md
 .env
 .DS_Store
+*.mov
+*.mp4
+*.webm

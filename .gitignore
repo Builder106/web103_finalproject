@@ -6,3 +6,5 @@ ISSUE_PLAN.md
 *.mov
 *.mp4
 *.webm
+client_secret*.json
+*credentials*.json
